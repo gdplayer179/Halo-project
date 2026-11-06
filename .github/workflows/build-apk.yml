@@ -39,7 +39,7 @@ jobs:
       - name: Build installable debug APK
         working-directory: InfinixHaloPulse
         
-run: sed -i 's/android.R.drawable.ic_menu_info/android.R.drawable.ic_dialog_info/g' app/src/main/java/com/example/halopulse/MainActivity.java && gradle --no-daemon assembleDebug
+        run: sed -i 's/android.R.drawable.ic_menu_info/android.R.drawable.ic_dialog_info/g' app/src/main/java/com/example/halopulse/MainActivity.java && gradle --no-daemon assembleDebug
       - name: Make APK available directly
         uses: actions/upload-artifact@v7
         with:
